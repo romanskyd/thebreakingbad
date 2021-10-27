@@ -1,12 +1,9 @@
-const reducers = (state = [], action) => {
-  switch (action.type) {
-    case 'LOADING_START':
-      return true;
-    case 'LOADING_END':
-      return false;
-    default:
-      return state;
-  }
-};
+import { combineReducers } from 'redux';
 
-export default reducers;
+import loadingReducer from './loadingReducer';
+import charactersReducer from './charactersReducer';
+
+export default combineReducers({
+  loading: loadingReducer,
+  characters: charactersReducer,
+});

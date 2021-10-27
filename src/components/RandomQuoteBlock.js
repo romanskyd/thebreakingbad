@@ -1,4 +1,3 @@
-/* eslint-disable import/no-unresolved */
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import QuotesService from 'services/quotes.service';

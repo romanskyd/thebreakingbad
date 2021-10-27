@@ -1,4 +1,3 @@
-/* eslint-disable import/no-unresolved */
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
@@ -7,11 +6,16 @@ import device from 'utils/device';
 
 const Card = styled(Link)`
   display: flex;
-  width: 33%;
-  padding: 0 0.5rem;
+  width: calc(33% - 1rem);
+  margin: 0 0.5rem;
   text-decoration: none;
   transition: all 0.2s;
   margin-bottom: 1rem;
+  -webkit-box-shadow: 2px 2px 3px 0px rgba(34, 60, 80, 0.07);
+  -moz-box-shadow: 2px 2px 3px 0px rgba(34, 60, 80, 0.07);
+  box-shadow: 2px 2px 3px 0px rgba(34, 60, 80, 0.07);
+  border-radius: 6px;
+  overflow: hidden;
   @media ${device.laptop} {
     width: 50%;
   }

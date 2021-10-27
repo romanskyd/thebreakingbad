@@ -1,8 +1,8 @@
-/* eslint-disable import/no-unresolved */
 import React, { useState, useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import styled from 'styled-components';
 
-import CharactersService from 'services/characters.service';
+import { loadCharacters } from 'store/actions/characterActions';
 import CharacterListItem from 'components/CharacterListItem';
 
 import img from 'assets/images/Rhombus.gif';
@@ -23,30 +23,15 @@ justify-content: center;
 `;
 
 const Characters = () => {
+  const dispatch = useDispatch();
+  const { items, isEnd } = useSelector((state) => state.characters);
   const LIMIT = 12;
-  const [items, setItems] = useState([]);
   const [isFetching, setIsFetching] = useState(true);
-  const [offset, setOffset] = useState(1);
-  const [isEnd, setIsEnd] = useState(false);
-  const loadSuccess = ({ data }) => {
-    setIsFetching(false);
-    if (data.length < LIMIT) {
-      setIsEnd(true);
-    }
-    setItems([...items, ...data]);
-    setOffset(offset + LIMIT);
-  };
 
   const loadData = () => {
-    CharactersService.getList(
-      { limit: LIMIT, offset },
-      (data) => {
-        loadSuccess(data);
-      },
-      (error) => {
-        console.error('error', error);
-      },
-    );
+    dispatch(loadCharacters(LIMIT)).then(() => {
+      setIsFetching(false);
+    });
   };
 
   const scrollHandler = (e) => {
@@ -58,7 +43,7 @@ const Characters = () => {
   };
 
   useEffect(() => {
-    if (isFetching && !isEnd) {
+    if (isFetching) {
       loadData();
     }
   }, [isFetching]);

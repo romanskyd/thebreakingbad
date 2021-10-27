@@ -1,4 +1,3 @@
-/* eslint-disable import/no-unresolved */
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { useParams } from 'react-router-dom';
@@ -10,6 +9,7 @@ const Detail = styled.section`
   margin: 0 auto;
   display: flex;
   align-items: flex-start;
+  background: #efefef;
   img {
     width: 18.75rem;
   }
