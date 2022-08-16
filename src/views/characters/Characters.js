@@ -18,8 +18,8 @@ const List = styled.div`
 `;
 
 const Loader = styled.div`
-display: flex;
-justify-content: center;
+  display: flex;
+  justify-content: center;
 `;
 
 const Characters = () => {
