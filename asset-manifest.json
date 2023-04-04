@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/thebreakingbad/static/css/main.ba4589d7.chunk.css",
+    "main.js": "/thebreakingbad/static/js/main.c0eb88f7.chunk.js",
+    "main.js.map": "/thebreakingbad/static/js/main.c0eb88f7.chunk.js.map",
+    "runtime-main.js": "/thebreakingbad/static/js/runtime-main.9399a1c3.js",
+    "runtime-main.js.map": "/thebreakingbad/static/js/runtime-main.9399a1c3.js.map",
+    "static/css/2.fda61496.chunk.css": "/thebreakingbad/static/css/2.fda61496.chunk.css",
+    "static/js/2.8e274ac7.chunk.js": "/thebreakingbad/static/js/2.8e274ac7.chunk.js",
+    "static/js/2.8e274ac7.chunk.js.map": "/thebreakingbad/static/js/2.8e274ac7.chunk.js.map",
+    "static/js/3.e9dbb691.chunk.js": "/thebreakingbad/static/js/3.e9dbb691.chunk.js",
+    "static/js/3.e9dbb691.chunk.js.map": "/thebreakingbad/static/js/3.e9dbb691.chunk.js.map",
+    "index.html": "/thebreakingbad/index.html",
+    "static/css/2.fda61496.chunk.css.map": "/thebreakingbad/static/css/2.fda61496.chunk.css.map",
+    "static/css/main.ba4589d7.chunk.css.map": "/thebreakingbad/static/css/main.ba4589d7.chunk.css.map",
+    "static/js/2.8e274ac7.chunk.js.LICENSE.txt": "/thebreakingbad/static/js/2.8e274ac7.chunk.js.LICENSE.txt",
+    "static/media/Rhombus.9c7cd866.gif": "/thebreakingbad/static/media/Rhombus.9c7cd866.gif",
+    "static/media/logo.4543bc50.svg": "/thebreakingbad/static/media/logo.4543bc50.svg",
+    "static/media/slick-theme.css": "/thebreakingbad/static/media/slick.c94f7671.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9399a1c3.js",
+    "static/css/2.fda61496.chunk.css",
+    "static/js/2.8e274ac7.chunk.js",
+    "static/css/main.ba4589d7.chunk.css",
+    "static/js/main.c0eb88f7.chunk.js"
+  ]
+}
